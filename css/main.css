@@ -4,6 +4,39 @@
 	outline: 0;
 	box-sizing: border-box;
 }
-body {
-	color: #ff6600;
+header {
+	background-color: grey;
+}
+.wrap {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul {
+	list-style-type: none;
+}
+nav ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+img {
+	height: 80px;
+}
+section, footer {
+	padding: 10px 0;
+}
+p {
+	text-align: justify;
+}
+footer {
+	background-color: grey;
+	color: #ffffff;
 }
