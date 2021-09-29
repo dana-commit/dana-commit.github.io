@@ -4,39 +4,105 @@
 	outline: 0;
 	box-sizing: border-box;
 }
-header {
-	background-color: grey;
+body{
+	font-size: 1.5rem;
 }
-.wrap {
-	width: 80%;
+.cont{
+	width: 900px;
 	margin: 0 auto;
+}
+#navigation, #contacts{
+	list-style-type: none;
+}
+#navigation li, #contacts li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#navigation li:last-child, #contacts li:last-child{
+	margin-right: 0;
+}
+nav{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
-nav ul {
-	list-style-type: none;
+header{
+	background-color: #91A5E7;
+	padding: 8px 0;
 }
-nav ul li {
-	display: inline-block;
-	margin-left: 20px;
-}
-nav ul li a {
+#navigation li a,#contacts li a{
+	color: #fff;
 	text-decoration: none;
-	color: #ffffff;
 }
-img {
-	height: 80px;
+#navigation li a:hover, #contacts li a:hover {
+	color:#000;
+
 }
-section, footer {
-	padding: 10px 0;
+#navigation li a:active, #contacts li a:active{
+	color: red;
 }
-p {
-	text-align: justify;
+#navigation li a::visited, #contacts li a::visited{
+	color: #9B48DE;
 }
-footer {
-	background-color: grey;
-	color: #ffffff;
+#viber::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/viber.svg);
+	vertical-align: middle;
+}
+#vk::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/vk.svg);
+	vertical-align: middle;
+}
+#instagram::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/instagram.svg);
+	vertical-align: middle;
+}
+#telegram::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/telegram.svg);
+	vertical-align: middle;
+}
+#top .cont{ 
+	position: relative;
+    height: 50vh;
+
+ }
+#mi{
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 20px;
+	text-align: center;
+}
+
+#mi h1, #mi p{
+	text-align: center;
+}
+#mi img {
+	display: inline-block;
+	height: 260px;
+	border-radius: 50%;
+}
+#top {
+	background-image: url(../img/name228.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
 }
