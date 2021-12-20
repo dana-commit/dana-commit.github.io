@@ -8,7 +8,7 @@ body{
 	font-size: 1.5rem;
 }
 .cont{
-	width: 900px;
+	width: 90%;
 	margin: 0 auto;
 
 }
@@ -80,16 +80,17 @@ header{
 	vertical-align: middle;
 }
 #top .cont{ 
-	position: relative;
-    height: 50vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 
  }
 #mi{
-	position: absolute;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	margin-top: 20px;
 	text-align: center;
+	flex-grow: 1;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
 }
 
 #mi h1, #mi p{
@@ -109,11 +110,61 @@ header{
 }
 #team {
 	background-color: #B0E0E6;
+
 }
 #team .cont {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-start;
+
+
+}
+#team .cont div {
+	flex-grow: 0;
+	flex-basis: 33%;
+	flex-shrink: 1;
+}
+#team .cont  h2{
+text-align: center;
+}
+#team .cont img {
+	display: block;
+	margin: 0 auto;
+	
+}
+footer .cont {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+footer .cont>div{
+	background-color: #FF6347;
+	margin: 4px;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+@media only screen and (min-width: 1200px) {
+	footer .cont>div{
+		flex-basis: 24%;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	footer .cont>div{
+		flex-basis: 32%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	footer .cont>div{
+		flex-basis: 48%;		
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	footer .cont>div{
+		flex-basis: 100%;	
+	}
 }
