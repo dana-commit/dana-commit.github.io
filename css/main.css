@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,600;0,700;1,900&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -6,6 +7,8 @@
 }
 body{
 	font-size: 1.5rem;
+	font-family: 'Source Serif Pro', serif;
+
 }
 .cont{
 	width: 90%;
@@ -47,38 +50,7 @@ header{
 #navigation li a::visited, #contacts li a::visited{
 	color: #9B48DE;
 }
-#viber::before {
-	content: "";
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/viber.svg);
-	vertical-align: middle;
-}
-#vk::before {
-	content: "";
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/vk.svg);
-	vertical-align: middle;
-}
-#instagram::before {
-	content: "";
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/instagram.svg);
-	vertical-align: middle;
-}
-#telegram::before {
-	content: "";
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/telegram.svg);
-	vertical-align: middle;
-}
+
 #top .cont{ 
 	display: flex;
 	flex-direction: row;
@@ -95,6 +67,10 @@ header{
 
 #mi h1, #mi p{
 	text-align: center;
+}
+#mi h1 {
+	font-weight: 900;
+	font-size: 200%;
 }
 #mi img {
 	display: inline-block;
@@ -128,6 +104,7 @@ header{
 }
 #team .cont  h2{
 text-align: center;
+font-weight: 700;
 }
 #team .cont img {
 	display: block;
